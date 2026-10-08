@@ -7,3 +7,6 @@ car1.plate = "143gf3242"
 print("Car Name: " , car1.name)
 print("Car Color: " , car1.color)
 print("Car Plate: " , car1.plate)
+
+car1.name = 123
+print("Car Name: " , car1.name)
