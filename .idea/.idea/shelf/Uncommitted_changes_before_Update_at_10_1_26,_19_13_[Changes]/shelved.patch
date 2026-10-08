@@ -1,0 +1,157 @@
+Index: Car/car_class.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Car/car_class.py b/Car/car_class.py
+new file mode 100644
+--- /dev/null	(date 1790862650845)
++++ b/Car/car_class.py	(date 1790862650845)
+@@ -0,0 +1,17 @@
++class Car:
++    def __init__(self):
++        self.car_name = None
++        self.car_plate = None
++        self.car_color = None
++
++    def save_plate(self, plate):
++        print("plate saved", plate)
++
++    def change_plate(self, new_plate):
++        self.car_plate = new_plate
++        print("plate changed", new_plate)
++
++    def __repr__(self):
++        return f"Saved :{self.car_name} - {self.car_plate} - {self.car_color}"
++
++
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1790860774706)
++++ b/.idea/misc.xml	(date 1790860774706)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="~/PycharmProjects/pythonClassProject/pythonclassprojects/.venv" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1790855811137)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1790855811137)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/pythonclassprojects.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/pythonclassprojects.iml b/.idea/pythonclassprojects.iml
+new file mode 100644
+--- /dev/null	(date 1790860774694)
++++ b/.idea/pythonclassprojects.iml	(date 1790860774694)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/.venv" />
++    </content>
++    <orderEntry type="jdk" jdkName="~/PycharmProjects/pythonClassProject/pythonclassprojects/.venv" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1790855811133)
++++ b/.idea/modules.xml	(date 1790855811133)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/pythonclassprojects.iml" filepath="$PROJECT_DIR$/.idea/pythonclassprojects.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1790855811185)
++++ b/.idea/vcs.xml	(date 1790855811185)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: Car/car_test.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Car/car_test.py b/Car/car_test.py
+new file mode 100644
+--- /dev/null	(date 1790862817783)
++++ b/Car/car_test.py	(date 1790862817783)
+@@ -0,0 +1,10 @@
++from car_class import *
++
++car_1 = Car()
++car_1.car_name = "bmw"
++car_1.car_plate = "345h432"
++car_1.car_color = "red"
++
++car_1.save_plate(car_1.car_plate)
++car_1.change_plate("45B67890")
++print(car_1)
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1790855814384)
++++ b/.idea/.gitignore	(date 1790855814384)
+@@ -0,0 +1,10 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Ignored default folder with query files
++/queries/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
