@@ -1,4 +1,4 @@
-from module import *
+from car import *
 
 car1 = Car("mercedes","blue","653hd563")
 car1.name = "bmw"
