@@ -14,6 +14,9 @@ class Car:
             raise TypeError("name must be a string")
         self.__name = new_name
 
+    def __repr__(self):
+        return f"Name: {self.name} | Color: {self.color} | Plate: {self.plate}"
+
     @property
     def color(self):
         return self.__color
